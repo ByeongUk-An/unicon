@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DONG IL</title>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/5587d92f60.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google-Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+    />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- GSAP -->
+    <script src=“https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="Wrapper">
+      <header>
+        <div>
+          <i class="fas fa-democrat"></i>
+          <h1>Unicon</h1>
+        </div>
+        <nav>
+          <ul>
+            <li>NOW UNICON</li>
+            <li>PROJECTS</li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+            <li><i class="fas fa-search"></i></li>
+            <li><i class="fas fa-globe"></i></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="./asets/office-g2a49663c5_640.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./asets/source-g15843e325_640.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./asets/step-by-step-g45448d157_640.jpg" alt="" />
+          </div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+
+        <div class="swiper-pagination swiper-pagination-fraction">
+          <span class="swiper-pagination-current">1</span>
+          <span class="swiper-progress__hidden-space"></span>
+          <span class="swiper-pagination-total">3</span>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need ProgressBar -->
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
