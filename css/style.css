@@ -178,6 +178,12 @@ header ul li:nth-child(5) {
   margin-right: 20px;
 }
 
+/* font-face */
+@font-face {
+  font-family: "GongGothicMedium";
+  src: url(../font/Gong\ Gothic\ Medium.ttf);
+}
+
 /* Animation Keyframes */
 @keyframes verticalscroll {
   0% {
@@ -267,4 +273,69 @@ header ul li:nth-child(5) {
   transform: translate(-50%, -50%);
   font-size: 24px;
   color: #fff;
+}
+
+/* business */
+.bisiness-wrapper {
+  background: #f3f3f3;
+}
+.bisiness-wrapper .bisiness {
+  padding: 150px 20px;
+}
+
+.bisiness-wrapper .bisiness h1 {
+  margin-bottom: 50px;
+  position: relative;
+}
+.bisiness h1 img {
+  max-width: 100%;
+}
+.bisiness .bisiness-title {
+  font-size: 24px;
+  line-height: 1.4;
+  margin-bottom: 85px;
+}
+
+.business-list {
+  display: flex;
+  margin-left: -20px;
+}
+
+.business-list li {
+  box-sizing: content-box;
+  width: 33.333%;
+
+  padding-left: 60px;
+}
+.business-list li:first-child {
+  padding-left: 20px;
+}
+.business-list li div {
+}
+.business-list li div img {
+  width: 100%;
+  margin-bottom: 60px;
+  height: 300px;
+}
+
+.business-list .text-box {
+  padding-left: 60px;
+  position: relative;
+}
+
+.business-list .number {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-family: GongGothicMedium;
+}
+
+.business-list .tit {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.business-list .text {
+  font-size: 15px;
+  line-height: 1.4;
 }
