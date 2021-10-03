@@ -1,5 +1,7 @@
 /* reset css */
-
+* {
+  box-sizing: border-box;
+}
 html,
 body,
 div,
@@ -125,6 +127,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+.clearfix {
+  content: "";
+  display: block;
+  clear: both;
+}
 /* Swiper */
 .swiper {
   width: 100%;
@@ -168,4 +176,95 @@ header ul li {
 
 header ul li:nth-child(5) {
   margin-right: 20px;
+}
+
+/* Animation Keyframes */
+@keyframes verticalscroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-1045px);
+  }
+}
+/* Service */
+.service-wrapper {
+  padding: 0 90px;
+  background-color: #f9f9f9;
+  height: 860px;
+  overflow: hidden;
+}
+.service {
+  overflow: hidden;
+}
+.service .left-box {
+  width: 50%;
+  padding: 190px 0 190px 30px;
+  float: left;
+}
+.service .left-box strong {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+.service .left-box h3 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.service .left-box h3 > span {
+  color: #aaa;
+}
+
+.service .left-box .service-btn {
+  display: inline-block;
+  color: #fff;
+  font-weight: 700;
+  background: #1e1e1e;
+  padding: 0 40px;
+  font-size: 15px;
+  line-height: 54px;
+  border-radius: 100px;
+  text-decoration: none;
+  margin-top: 48px;
+}
+
+.service .right-box {
+  width: 50%;
+  float: left;
+  overflow: hidden;
+}
+
+.service .right-box ul {
+  width: 43%;
+  margin-right: 7%;
+  float: left;
+  animation: verticalscroll 50s linear infinite;
+}
+
+.service .right-box ul:last-child {
+  margin-right: 0;
+  position: relative;
+  top: -160px;
+}
+
+.service .right-box ul li {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.service .right-box ul li img {
+  width: 100%;
+  border-radius: 24px;
+}
+
+.service .right-box ul li span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: #fff;
 }
