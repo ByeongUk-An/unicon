@@ -24,3 +24,16 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-scrollbar",
   },
 });
+
+// Port-View
+
+function tabopen(i) {
+  $(".p-list").removeClass("active");
+  $(".p-list").eq(i).addClass("active");
+  $(".data-img").removeClass("active-img");
+  $(".data-img").eq(i).addClass("active-img");
+}
+
+$(".p-list").click(function (e) {
+  tabopen(e.currentTarget.dataset.li);
+});
