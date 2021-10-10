@@ -343,7 +343,6 @@ header ul li:nth-child(5) {
 
 .view-container {
   padding-left: 60px;
-  height: 800px;
   display: flex;
 }
 .view-container dl {
@@ -419,7 +418,7 @@ header ul li:nth-child(5) {
 .port-view li img {
   position: absolute;
   top: 0;
-  right: 0;
+  right: -150px;
   width: 548px;
   height: 638px;
   display: none;
@@ -440,4 +439,72 @@ header ul li:nth-child(5) {
 
 .port-view li img.active-img {
   display: block;
+}
+
+/* PROJECt */
+.project-wrapper {
+  padding: 30px 60px 30px;
+  position: relative;
+}
+
+.project {
+  display: flex;
+}
+.project-wrapper .project {
+}
+.project-wrapper .project .main-project-text {
+  width: 34.2%;
+
+  position: relative;
+}
+
+.project-title {
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 74px;
+  margin-bottom: 20px;
+}
+
+.project-desc {
+  font-size: 20px;
+}
+
+.main-project-slide {
+  position: relative;
+
+  width: 65.8%;
+  padding-left: 20px;
+  /* box-sizing: content-box; */
+}
+
+.bx-group {
+  display: flex;
+}
+
+.bx-group > div {
+  flex: 1;
+
+  /* background: burlywood; */
+}
+
+.bx-group > div:last-child {
+  margin-left: 30px;
+}
+
+.bx-group > div > img {
+  vertical-align: top;
+}
+
+.bx-group > div:first-child > img {
+}
+
+/* swiper pagination */
+.swiper-pagination-fraction {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.mySwiper1 {
+  height: auto;
 }

@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper", {
+new Swiper(".mySwiper", {
   // Optional parameters
   //   direction: "vertical",
   loop: true,
@@ -36,4 +36,19 @@ function tabopen(i) {
 
 $(".p-list").click(function (e) {
   tabopen(e.currentTarget.dataset.li);
+});
+
+// Project-slide
+new Swiper(".mySwiper1", {
+  autoplay: {
+    delay: 3000,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
