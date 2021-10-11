@@ -129,6 +129,7 @@ table {
 }
 a {
   text-decoration: none;
+  color: black;
 }
 
 .clearfix {
@@ -545,6 +546,9 @@ header ul li:nth-child(5) {
   left: 260px;
 }
 
+.swiper-button-prev .custom-swiper-btn-next {
+  left: 0 !important;
+}
 .swiper-button-next {
   right: -2px;
 }

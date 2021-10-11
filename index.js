@@ -3,21 +3,21 @@ new Swiper(".mySwiper", {
   //   direction: "vertical",
   loop: true,
   autoplay: {
-    delay: 1000,
+    delay: 3000,
   },
 
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
-    type: "progressbar",
-    totalClass: "fraction",
+    type: "bullets",
+    // totalClass: "fraction",
   },
 
   // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev",
+  // },
 
   // And if we need scrollbar
   scrollbar: {
