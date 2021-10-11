@@ -41,7 +41,7 @@ $(".p-list").click(function (e) {
 // Project-slide
 new Swiper(".mySwiper1", {
   autoplay: {
-    delay: 3000,
+    delay: 6000,
   },
   pagination: {
     el: ".swiper-pagination",
@@ -52,3 +52,11 @@ new Swiper(".mySwiper1", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+//  Naver Map Api
+var mapOptions = {
+  center: new naver.maps.LatLng(37.55631045990309, 126.97239996028738),
+  zoom: 17,
+};
+
+var map = new naver.maps.Map("map", mapOptions);

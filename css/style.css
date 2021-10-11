@@ -127,6 +127,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+a {
+  text-decoration: none;
+}
 
 .clearfix {
   content: "";
@@ -445,17 +448,18 @@ header ul li:nth-child(5) {
 .project-wrapper {
   padding: 30px 60px 30px;
   position: relative;
+  margin-bottom: 50px;
 }
 
 .project {
   display: flex;
+  position: relative;
 }
 .project-wrapper .project {
 }
 .project-wrapper .project .main-project-text {
-  width: 34.2%;
-
-  position: relative;
+  /* width: 34.2%; */
+  width: 20.2%;
 }
 
 .project-title {
@@ -472,8 +476,9 @@ header ul li:nth-child(5) {
 .main-project-slide {
   position: relative;
 
-  width: 65.8%;
+  width: 75.8%;
   padding-left: 20px;
+  overflow: hidden;
   /* box-sizing: content-box; */
 }
 
@@ -487,12 +492,26 @@ header ul li:nth-child(5) {
   /* background: burlywood; */
 }
 
-.bx-group > div:last-child {
+.bx-group > div {
   margin-left: 30px;
+}
+.bx-group > div:first-child {
+  margin-left: 0;
+}
+
+.bx-group > div > h4 {
+  text-align: center;
+}
+
+.bx-group > div > h4 {
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .bx-group > div > img {
   vertical-align: top;
+  height: 600px;
+  margin-bottom: 30px;
 }
 
 .bx-group > div:first-child > img {
@@ -500,11 +519,221 @@ header ul li:nth-child(5) {
 
 /* swiper pagination */
 .swiper-pagination-fraction {
+  position: absolute;
   bottom: 0;
-  left: 0;
-  width: 100%;
+  left: 160px;
+  width: 100px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .mySwiper1 {
   height: auto;
+}
+
+.swiper-slide1 {
+  padding-left: 300px;
+  padding-right: 40px;
+  overflow: hidden;
+}
+
+.bx-group {
+  overflow: hidden;
+}
+
+.swiper-button-prev {
+  left: 260px;
+}
+
+.swiper-button-next {
+  right: -2px;
+}
+
+/* Naver Map Api */
+#map {
+  margin: 50px 0 60px;
+  width: 100%;
+  height: 500px;
+}
+
+/* Section-menu */
+
+.section-menu {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 57px;
+}
+
+.section-menu .product-menu,
+.section-menu .product-counseling,
+.section-menu .product-question {
+  display: block;
+  width: 233px;
+  height: 98px;
+  float: left;
+  border-right: 1px solid #ebebeb;
+  text-align: center;
+  font-size: 20px;
+  color: #333;
+}
+
+.section-menu .product-menu > span {
+  display: block;
+  padding-top: 73px;
+  background: url(https://www.acebed.com/common/images/mainsec8-icon1.png)
+    no-repeat center 0;
+}
+
+.section-menu .product-counseling > span {
+  display: block;
+  padding-top: 73px;
+  background: url(https://www.acebed.com/common/images/mainsec8-icon2.png)
+    no-repeat center 0;
+}
+
+.section-menu .product-question > span {
+  display: block;
+  padding-top: 73px;
+  background: url(https://www.acebed.com/common/images/mainsec8-icon3.png)
+    no-repeat center 0;
+}
+
+.customer-wrapper {
+  width: 100%;
+  height: 362px;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 362px;
+  margin-top: 137px;
+}
+.customer-wrapper .customer-left-wrapper {
+  background: #ebebeb;
+  width: 50%;
+  height: 100%;
+}
+.customer-wrapper .customer-right-wrapper {
+  /* background: tomato; */
+  width: 50%;
+  height: 100%;
+}
+
+.customer-left {
+  display: table;
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 790px;
+  width: 630px;
+  height: 362px;
+}
+
+.customer-left li {
+  display: table-cell;
+  height: 362px;
+  vertical-align: middle;
+  font-size: 16px;
+  color: #333;
+}
+
+.customer-left-wrapper {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  width: 50%;
+  height: 362px;
+  background: #f4f4f4;
+}
+
+.customer-left .tx1 {
+  font-weight: bold;
+}
+
+.customer-left .tx2 {
+  font-size: 40px;
+  margin-top: 30px;
+  letter-spacing: 3px;
+}
+.customer-left .tx3 {
+  color: #888;
+  margin-top: 6px;
+}
+
+.customer-right-wrapper {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 362px;
+}
+.customer-right-wrapper .customer-right {
+  display: table-cell;
+  width: 100%;
+  height: 362px;
+  vertical-align: middle;
+  padding-left: 143px;
+}
+
+.customer-right .tx4 {
+  font-size: 30px;
+  line-height: 40px;
+  color: #333;
+  font-weight: 400;
+}
+
+.google-app {
+  display: inline-block;
+
+  height: 60px;
+  border: 1px solid #d1d1d1;
+  color: #777;
+  line-height: 55px;
+  text-align: center;
+  margin-top: 30px;
+
+  padding: 5px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin-right: 10px;
+}
+
+.google-app:last-child {
+  margin-right: 0;
+}
+
+/* footer */
+
+footer {
+  position: relative;
+  height: 220px;
+  padding: 60px 370px 62px 80px;
+  background: #fff;
+  z-index: 16;
+}
+
+.footer-link {
+  margin-bottom: 10px;
+}
+
+.footer-link a {
+  display: inline-block;
+  margin-right: 45px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  line-height: 36px;
+}
+
+.footer-link a.priv {
+  color: #0890c0;
+  font-weight: 700;
+}
+
+footer > p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #777;
+  line-height: 30px;
 }
