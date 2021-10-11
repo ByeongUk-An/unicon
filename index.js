@@ -10,6 +10,7 @@ new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
     type: "bullets",
+    clickable: true,
     // totalClass: "fraction",
   },
 
